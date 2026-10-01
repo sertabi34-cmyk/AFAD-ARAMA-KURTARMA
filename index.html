@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>İtfaiye Amirliği | Kurumsal Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="loginScreen" class="login-screen">
+    <div class="login-bg"></div>
+    <div class="login-card">
+      <div class="brand-lockup">
+        <div class="logo-wrap"><img id="loginLogo" src="assets/istanbul-itfaiyesi-logo.png" alt="İstanbul İtfaiyesi logosu" onerror="this.style.display='none';document.getElementById('logoFallback').style.display='grid'"><div id="logoFallback" class="logo-fallback">İBB<br><span>İTFAİYE</span></div></div>
+        <div><div class="eyebrow">KURUMSAL BİLGİ SİSTEMİ</div><h1>İtfaiye Amirliği</h1><p>Personel ve istasyon yönetim portalı</p></div>
+      </div>
+      <div class="demo-badge">DEMO ARAYÜZÜ · YAYINA ALINMADAN ÖNCE KURUMSAL ONAY GEREKLİDİR</div>
+      <form id="loginForm">
+        <label>Kullanıcı adı<input id="username" required placeholder="Kullanıcı adınızı girin" autocomplete="username"></label>
+        <label>Şifre<div class="password-field"><input id="password" required type="password" placeholder="Şifrenizi girin" autocomplete="current-password"><button type="button" id="togglePassword">Göster</button></div></label>
+        <div class="login-options"><label class="check"><input type="checkbox" id="remember"> Beni hatırla</label><a href="#" onclick="return false">Şifremi unuttum</a></div>
+        <button class="primary-btn" type="submit">Güvenli Giriş <span>→</span></button>
+      </form>
+      <p class="login-note">Bu çalışma bir tasarım/prototip örneğidir. Gerçek personel hesabı doğrulaması bu sayfada yapılmaz.</p>
+    </div>
+  </div>
+
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="side-brand"><div class="mini-logo"><img src="assets/istanbul-itfaiyesi-logo.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span>İBB<br>İTF</span></div><div><b>İTFAİYE</b><small>AMİRLİK SAYFASI</small></div></div>
+      <nav>
+        <div class="nav-group"><button class="nav-parent" id="rescueMenuButton" type="button" aria-expanded="false"><span>♧</span><span>Ağır Arama Kurtarma</span><b class="nav-arrow">⌄</b></button><div class="subnav" id="rescueSubnav"><div class="team-subgroup"><button class="team-button" type="button" data-team="İBB İTF 01"><span>İBB İTF 01</span><b class="team-arrow">⌄</b></button><div class="document-links"><a href="itf-01-sertifika.html" target="_blank">. Sertifika</a><a href="itf-01-yonetim.html" target="_blank">. Yönetim</a><a href="itf-01-personel-semasi.html" target="_blank">. Personel Şeması</a><a href="itf-01-manifesto.html" target="_blank">. Manifesto</a><a href="itf-01-haberlesme.html" target="_blank">. Haberleşme</a><a href="itf-01-diger-evraklar.html" target="_blank">. Diğer Evraklar</a></div></div><div class="team-subgroup"><button class="team-button" type="button" data-team="İBB İTF 02"><span>İBB İTF 02</span><b class="team-arrow">⌄</b></button><div class="document-links"><a href="itf-02-sertifika.html" target="_blank">. Sertifika</a><a href="itf-02-yonetim.html" target="_blank">. Yönetim</a><a href="itf-02-personel-semasi.html" target="_blank">. Personel Şeması</a><a href="itf-02-manifesto.html" target="_blank">. Manifesto</a><a href="itf-02-haberlesme.html" target="_blank">. Haberleşme</a><a href="itf-02-diger-evraklar.html" target="_blank">. Diğer Evraklar</a></div></div><div class="team-subgroup"><button class="team-button" type="button" data-team="İBB İTF 03"><span>İBB İTF 03</span><b class="team-arrow">⌄</b></button><div class="document-links"><a href="itf-03-sertifika.html" target="_blank">. Sertifika</a><a href="itf-03-yonetim.html" target="_blank">. Yönetim</a><a href="itf-03-personel-semasi.html" target="_blank">. Personel Şeması</a><a href="itf-03-manifesto.html" target="_blank">. Manifesto</a><a href="itf-03-haberlesme.html" target="_blank">. Haberleşme</a><a href="itf-03-diger-evraklar.html" target="_blank">. Diğer Evraklar</a></div></div><div class="team-subgroup"><button class="team-button" type="button" data-team="İBB İTF 04"><span>İBB İTF 04</span><b class="team-arrow">⌄</b></button><div class="document-links"><a href="itf-04-sertifika.html" target="_blank">. Sertifika</a><a href="itf-04-yonetim.html" target="_blank">. Yönetim</a><a href="itf-04-personel-semasi.html" target="_blank">. Personel Şeması</a><a href="itf-04-manifesto.html" target="_blank">. Manifesto</a><a href="itf-04-haberlesme.html" target="_blank">. Haberleşme</a><a href="itf-04-diger-evraklar.html" target="_blank">. Diğer Evraklar</a></div></div><div class="team-subgroup"><button class="team-button" type="button" data-team="İBB İTF 05"><span>İBB İTF 05</span><b class="team-arrow">⌄</b></button><div class="document-links"><a href="itf-05-sertifika.html" target="_blank">. Sertifika</a><a href="itf-05-yonetim.html" target="_blank">. Yönetim</a><a href="itf-05-personel-semasi.html" target="_blank">. Personel Şeması</a><a href="itf-05-manifesto.html" target="_blank">. Manifesto</a><a href="itf-05-haberlesme.html" target="_blank">. Haberleşme</a><a href="itf-05-diger-evraklar.html" target="_blank">. Diğer Evraklar</a></div></div></div></div><a class="active" href="haberler.html">◉ <span>Haberler</span></a><a href="egitimler.html">▣ <span>Eğitimler</span></a><a href="resimler.html">▤ <span>Resimler</span></a><a href="duyurular.html">◈ <span>Duyurular</span></a><a href="depo.html">▣ <span>Depo</span></a><a href="iletisim.html">☎ <span>İletişim</span></a><a href="tum-evraklar.html">▤ <span>Tüm Evraklar</span></a>
+      </nav>
+      <div class="side-bottom"><div class="status"><i></i> Sistem aktif</div><button id="logout">↪ Çıkış yap</button></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><div class="mobile-title">İTFAİYE AMİRLİĞİ</div><div class="crumb">Ana Sayfa <b>/</b> Genel Bakış</div><div class="top-actions"><button class="icon-btn">⌕</button><button class="icon-btn">◔</button><div class="profile"><div class="avatar">A</div><div><b>Amirlik Kullanıcısı</b><small>Personel</small></div></div></div></header>
+      <section class="hero"><div class="hero-copy"><div class="eyebrow red">İSTANBUL İTFAİYESİ</div><h2>Görev, disiplin ve <span>koordinasyon.</span></h2><p>İtfaiye amirliğine ait günlük operasyon, ekip, araç ve duyuru bilgilerinin tek merkezden yönetilebildiği kurumsal arayüz.</p><div class="hero-actions"><button class="primary-btn" onclick="scrollToId('about')">Amirliği Görüntüle →</button><button class="ghost-btn" onclick="scrollToId('gallery')">Fotoğraf Arşivi</button></div></div><div class="hero-photo photo-slot"><div class="photo-hint">HERO FOTOĞRAFI<br><small>assets/hero.jpg</small></div></div></section>
+
+      <section id="dashboard" class="section"><div class="section-head"><div><div class="eyebrow">OPERASYON MERKEZİ</div><h3>Bugünün Özeti</h3></div><span class="date-pill" id="today"></span></div>
+        <div class="stats"><div class="stat"><span>Personel</span><strong>—</strong><small>Bilgi eklenecek</small></div><div class="stat"><span>Araçlar</span><strong>—</strong><small>Bilgi eklenecek</small></div><div class="stat"><span>Vardiya</span><strong>—</strong><small>Bilgi eklenecek</small></div><div class="stat accent"><span>Sistem</span><strong>AKTİF</strong><small>Portal durumu</small></div></div>
+      </section>
+
+      <section id="about" class="section split"><div><div class="eyebrow">AMİRLİK</div><h3>İstasyon Hakkında</h3><p class="lead">Buraya amirliğin kuruluşu, görev alanı, hizmet anlayışı ve istasyon bilgileri eklenebilir.</p><div class="info-grid"><div><small>Konum</small><b>İstanbul / Başakşehir</b></div><div><small>Hizmet Birimi</small><b>İtfaiye Amirliği</b></div><div><small>İletişim</small><b>+90 212 488 33 48
+</b></div><div><small>Çalışma Düzeni</small><b>Vardiya sistemi</b></div></div></div><div class="about-photo photo-slot has-photo" style="background-image:url('assets/station.jpg')"><div class="photo-hint">İSTASYON FOTOĞRAFI<br><small>assets/station.jpg</small></div></div></section>
+
+      <section id="team" class="section"><div class="section-head"><div><div class="eyebrow">KADRO</div><h3>Personel Birimleri</h3></div><button class="outline-btn">+ Personel ekle</button></div><div class="cards"><div class="role-card"><span class="role-icon">★</span><div><b>Amirlik Yönetimi</b><p>Amir / Amir yardımcısı</p></div></div><div class="role-card"><span class="role-icon">◈</span><div><b>Operasyon Ekibi</b><p>Görev ve müdahale personeli</p></div></div><div class="role-card"><span class="role-icon">◌</span><div><b>Sürücü Ekibi</b><p>Araç ve sevk koordinasyonu</p></div></div></div></section>
+
+      <section id="vehicles" class="section"><div class="section-head"><div><div class="eyebrow">LOJİSTİK</div><h3>Araç & Ekipman</h3></div></div><div class="vehicle-grid"><div class="vehicle photo-slot has-photo" style="background-image:url('assets/vehicle-1.jpg')"><div class="photo-hint">ARAÇ FOTOĞRAFI<br><small>assets/vehicle-1.jpg</small></div><div class="vehicle-label"><b>Araç 01</b><span>Bilgi eklenecek</span></div></div><div class="vehicle photo-slot has-photo" style="background-image:url('assets/vehicle-2.jpg')"><div class="photo-hint">ARAÇ FOTOĞRAFI<br><small>assets/vehicle-2.jpg</small></div><div class="vehicle-label"><b>Araç 02</b><span>Bilgi eklenecek</span></div></div><div class="vehicle photo-slot has-photo" style="background-image:url('assets/equipment.jpg')"><div class="photo-hint">EKİPMAN FOTOĞRAFI<br><small>assets/equipment.jpg</small></div><div class="vehicle-label"><b>Ekipman</b><span>Bilgi eklenecek</span></div></div></div></section>
+
+      <section id="gallery" class="section"><div class="section-head"><div><div class="eyebrow">MEDYA</div><h3>Fotoğraf Arşivi</h3></div><button class="outline-btn" onclick="document.getElementById('photoInput').click()">+ Fotoğraf seç</button></div><input id="photoInput" type="file" accept="image/*" multiple hidden><div id="galleryGrid" class="gallery-grid"><div class="gallery-item photo-slot"><div class="photo-hint">FOTOĞRAF 01<br><small>Buraya görsel ekleyebilirsin</small></div></div><div class="gallery-item photo-slot"><div class="photo-hint">FOTOĞRAF 02</div></div><div class="gallery-item photo-slot"><div class="photo-hint">FOTOĞRAF 03</div></div></div></section>
+
+      <section id="announcements" class="section"><div class="eyebrow">BİLGİLENDİRME</div><h3>Duyurular</h3><div class="notice-list"><article><span>01</span><div><b>Amirlik duyurusu</b><p>Duyuru metni buraya eklenebilir.</p></div><time>—</time></article><article><span>02</span><div><b>Vardiya bilgilendirmesi</b><p>Vardiya ve görev planlamasıyla ilgili bilgiler.</p></div><time>—</time></article></div></section>
+
+      <footer><div><b>İTFAİYE AMİRLİĞİ</b><span>Kurumsal tasarım prototipi</span></div><span>© 2026 · İTFAİYE</span></footer>
+    </main>
+  </div>
+<script src="app.js"></script>
+</body></html>
